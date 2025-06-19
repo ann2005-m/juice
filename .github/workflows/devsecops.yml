@@ -40,3 +40,47 @@ jobs:
 
       - name: Run Angular tests (headless Chrome)
         run: npm run test:ci
+    
+  api-tests:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./backend
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install backend dependencies
+        run: |
+          npm install --legacy-peer-deps
+          npm install nyc --save-dev
+
+      - name: Run API tests
+        run: npm run test:server
+
+      - name: Copy coverage file
+        run: |
+          if [ -f build/reports/coverage/api-tests/lcov.info ]; then
+            cp build/reports/coverage/api-tests/lcov.info api-lcov.info
+          else
+            echo "Coverage report not found"
+          fi
+  test:
+     runs-on: ubuntu-latest
+     defaults:
+      run:
+         working-directory: ./frontend
+     steps:
+      - uses: actions/checkout@v4
+      - run: npm ci
+      - run: npm run test:ci # Use karma with --no-sandbox
+
+  e2e:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./frontend
+    steps:
+      - uses: actions/checkout@v4
+      - run: npm ci
+      - run: npm run cypress # remove --record unless you have key
+      
