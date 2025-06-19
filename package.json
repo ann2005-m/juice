@@ -266,14 +266,6 @@
     "typescript": "~5.3.3"
   },
 
-  customLaunchers: {
-  ChromeHeadlessNoSandbox: {
-    base: 'ChromeHeadless',
-    flags: ['--no-sandbox', '--disable-gpu']
-    }
-  },
-  browsers: ['ChromeHeadlessNoSandbox'],
-
   "engines": {
     "node": "20 - 22"
   },
