@@ -1,0 +1,42 @@
+name: DevSecOps Pipeline
+
+on:
+  push:
+    branches: [ feat/add-bom ]
+  pull_request:
+    branches: [ feat/add-bom ]
+
+jobs:
+  angular-ci:
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: ./frontend
+
+    env:
+      CHROME_BIN: /usr/bin/google-chrome
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Install Chrome for Headless Tests
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y wget gnupg unzip curl
+          sudo apt-get install -y google-chrome-stable
+
+      - name: Install project dependencies (with legacy peer deps)
+        run: npm install --legacy-peer-deps
+
+      - name: Install Angular CLI
+        run: npm install -g @angular/cli
+
+      - name: Run Angular tests (headless Chrome)
+        run: npm run test:ci
