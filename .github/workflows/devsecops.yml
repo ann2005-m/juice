@@ -39,13 +39,13 @@ jobs:
         run: npm install -g @angular/cli
 
       - name: Run Angular tests (headless Chrome)
-        run: npm run test:ci
+        run: npm install
     
   api-tests:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./backend
+        working-directory: ./
     steps:
       - uses: actions/checkout@v4
 
@@ -71,7 +71,7 @@ jobs:
          working-directory: ./frontend
      steps:
       - uses: actions/checkout@v4
-      - run: npm ci
+      - run: npm install
       - run: npm run test:ci # Use karma with --no-sandbox
 
   e2e:
@@ -81,6 +81,6 @@ jobs:
         working-directory: ./frontend
     steps:
       - uses: actions/checkout@v4
-      - run: npm ci
+      - run: npm install
       - run: npm run cypress # remove --record unless you have key
       
