@@ -36,11 +36,5 @@ module.exports = function (config) {
          flags: ['--no-sandbox', '--disable-gpu']
           }
       },
-    coverageReporter: {
-      dir: require('path').join(__dirname, 'build/reports/coverage/frontend-tests'),
-      reporters: [{ type: 'lcov' }, { type: 'html' }]
-    },
-    reporters: ['progress', 'coverage', 'kjhtml'],
-
   })
 }
