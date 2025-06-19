@@ -28,13 +28,19 @@ module.exports = function (config) {
         { type: 'lcovonly' }
       ]
     },
-    reporters: ['progress', 'kjhtml'],
-    port: 9876,
-    colors: true,
-    logLevel: config.LOG_INFO,
-    autoWatch: true,
-    browsers: ['ChromeHeadless'],
-    singleRun: false,
-    restartOnFileChange: true
+
+    browsers: ['ChromeHeadlessNoSandbox'],
+    customLaunchers: {
+       ChromeHeadlessNoSandbox: {
+         base: 'ChromeHeadless',
+         flags: ['--no-sandbox', '--disable-gpu']
+          }
+      },
+    coverageReporter: {
+      dir: require('path').join(__dirname, 'build/reports/coverage/frontend-tests'),
+      reporters: [{ type: 'lcov' }, { type: 'html' }]
+    },
+    reporters: ['progress', 'coverage', 'kjhtml'],
+
   })
 }
