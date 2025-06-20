@@ -11,6 +11,7 @@ import { MatCardModule } from '@angular/material/card'
 
 @Component({
   selector: 'app-last-login-ip',
+  standalone: true,
   templateUrl: './last-login-ip.component.html',
   styleUrls: ['./last-login-ip.component.scss'],
   imports: [MatCardModule, TranslateModule]
