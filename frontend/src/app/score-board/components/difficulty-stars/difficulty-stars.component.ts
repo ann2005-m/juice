@@ -3,6 +3,7 @@ import { NgFor } from '@angular/common'
 
 @Component({
   selector: 'difficulty-stars',
+  standalone: true,
   templateUrl: './difficulty-stars.component.html',
   styleUrls: ['./difficulty-stars.component.scss'],
   imports: [NgFor]
