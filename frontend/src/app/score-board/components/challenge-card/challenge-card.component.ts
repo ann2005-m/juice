@@ -10,6 +10,7 @@ import { DifficultyStarsComponent } from '../difficulty-stars/difficulty-stars.c
 
 @Component({
   selector: 'challenge-card',
+  standalone: true,
   templateUrl: './challenge-card.component.html',
   styleUrls: ['./challenge-card.component.scss'],
   imports: [DifficultyStarsComponent, NgFor, MatTooltip, NgIf, MatIconModule, NgClass, AsyncPipe, TranslateModule, ChallengeHintPipe]
