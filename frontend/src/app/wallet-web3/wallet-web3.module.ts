@@ -20,7 +20,6 @@ const routes: Routes = [
 ]
 
 @NgModule({
-  declarations: [WalletWeb3Component],
   imports: [
     CommonModule,
     RouterModule.forChild(routes),

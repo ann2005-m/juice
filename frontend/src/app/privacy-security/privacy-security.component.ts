@@ -8,7 +8,7 @@ import { RouterOutlet } from '@angular/router'
 
 @Component({
   selector: 'app-privacy-security',
-  stanalone: true,
+  standalone: true,
   templateUrl: './privacy-security.component.html',
   styleUrls: ['./privacy-security.component.scss'],
   imports: [RouterOutlet]
