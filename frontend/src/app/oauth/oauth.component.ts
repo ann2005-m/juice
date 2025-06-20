@@ -13,6 +13,7 @@ import { FlexModule } from '@angular/flex-layout/flex'
 
 @Component({
   selector: 'app-oauth',
+  standalone: true,
   templateUrl: './oauth.component.html',
   styleUrls: ['./oauth.component.scss'],
   imports: [FlexModule, MatCardModule, TranslateModule]
