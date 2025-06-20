@@ -2,7 +2,7 @@
  * Copyright (c) 2014-2025 Bjoern Kimminich & the OWASP Juice Shop contributors.
  * SPDX-License-Identifier: MIT
  */
-/*
+
 import { Component, NgZone, type OnInit } from '@angular/core'
 import { WalletService } from '../Services/wallet.service'
 import { UntypedFormControl, Validators, FormsModule, ReactiveFormsModule } from '@angular/forms'
@@ -14,11 +14,7 @@ import { MatFormFieldModule, MatLabel, MatError } from '@angular/material/form-f
 import { TranslateModule } from '@ngx-translate/core'
 import { MatCardModule } from '@angular/material/card'
 import { MatIconModule } from '@angular/material/icon'
- */
-import { Router } from '@angular/router'
 import { Validators, UntypedFormControl } from '@angular/forms'
-import { NgZone } from '@angular/core'
-import { WalletService } from 'src/app/services/wallet.service'
 
 @Component({
   selector: 'app-wallet',
