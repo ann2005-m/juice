@@ -9,6 +9,7 @@ import { NgIf } from '@angular/common'
 
 @Component({
   selector: 'tutorial-mode-warning',
+  standalone: true,
   templateUrl: './tutorial-mode-warning.component.html',
   imports: [NgIf, WarningCardComponent, MatIconModule, TranslateModule]
 })
