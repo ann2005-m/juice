@@ -18,6 +18,7 @@ library.add(faArrowCircleLeft)
 
 @Component({
   selector: 'app-user-details',
+  standalone: true,
   templateUrl: './user-details.component.html',
   styleUrls: ['./user-details.component.scss'],
   imports: [MatDialogContent, MatDivider, FlexModule, TranslateModule, MatDialogActions, MatButtonModule, MatDialogClose, MatIconModule]
