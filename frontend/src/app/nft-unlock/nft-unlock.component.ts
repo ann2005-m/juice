@@ -12,6 +12,7 @@ import { MatCardModule, MatCardTitle } from '@angular/material/card'
 
 @Component({
   selector: 'app-nft-unlock',
+  standalone: true,
   templateUrl: './nft-unlock.component.html',
   styleUrls: ['./nft-unlock.component.scss'],
   imports: [MatCardModule, FlexModule, MatButtonModule, TranslateModule, NgIf, MatCardTitle, FormsModule, MatFormFieldModule, MatLabel, MatInputModule, MatDivider]
