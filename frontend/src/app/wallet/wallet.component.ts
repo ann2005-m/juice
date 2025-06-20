@@ -20,7 +20,7 @@ import { MatIconModule } from '@angular/material/icon'
   selector: 'app-wallet',
   templateUrl: './wallet.component.html',
   styleUrls: ['./wallet.component.scss'],
-  /*imports: [MatCardModule, TranslateModule, MatFormFieldModule, MatLabel, FormsModule, MatInputModule, ReactiveFormsModule, NgIf, MatError, MatButtonModule, MatIconModule]*/
+  /* imports: [MatCardModule, TranslateModule, MatFormFieldModule, MatLabel, FormsModule, MatInputModule, ReactiveFormsModule, NgIf, MatError, MatButtonModule, MatIconModule] */
 })
 export class WalletComponent implements OnInit {
   public balance: string
@@ -38,6 +38,6 @@ export class WalletComponent implements OnInit {
 
   continue () {
     sessionStorage.setItem('walletTotal', this.balanceControl.value)
-    this.ngZone.run(async () => await this.router.navigate(['/payment', 'wallet']))
+    this.ngZone.run(async () => this.router.navigate(['/payment', 'wallet']))
   }
 }
