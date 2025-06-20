@@ -15,11 +15,17 @@ import { TranslateModule } from '@ngx-translate/core'
 import { MatCardModule } from '@angular/material/card'
 import { MatIconModule } from '@angular/material/icon'
  */
+import { Router } from '@angular/router'
+import { Validators, UntypedFormControl } from '@angular/forms'
+import { NgZone } from '@angular/core'
+import { WalletService } from 'src/app/services/wallet.service'
 
 @Component({
   selector: 'app-wallet',
+  standalone: true,
   templateUrl: './wallet.component.html',
-  styleUrls: ['./wallet.component.scss']
+  styleUrls: ['./wallet.component.scss'],
+  imports: [MatCardModule, TranslateModule, MatFormFieldModule, MatLabel, FormsModule, MatInputModule, ReactiveFormsModule, NgIf, MatError, MatButtonModule, MatIconModule]
 })
 export class WalletComponent implements OnInit {
   public balance: string
