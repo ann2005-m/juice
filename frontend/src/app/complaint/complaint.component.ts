@@ -25,6 +25,7 @@ library.add(faBomb)
 
 @Component({
   selector: 'app-complaint',
+  standalone: true,
   templateUrl: './complaint.component.html',
   styleUrls: ['./complaint.component.scss'],
   imports: [FlexModule, MatCardModule, TranslateModule, NgIf, MatFormFieldModule, MatLabel, MatInputModule, FormsModule, ReactiveFormsModule, MatHint, MatError, FileUploadModule, MatButtonModule, MatIconModule]
