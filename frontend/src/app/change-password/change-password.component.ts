@@ -22,6 +22,7 @@ library.add(faSave, faEdit)
 
 @Component({
   selector: 'app-change-password',
+  standalone: true,
   templateUrl: './change-password.component.html',
   styleUrls: ['./change-password.component.scss'],
   imports: [FlexModule, MatCardModule, TranslateModule, MatFormFieldModule, MatLabel, MatInputModule, FormsModule, ReactiveFormsModule, NgIf, MatError, MatHint, MatButtonModule]
