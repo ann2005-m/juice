@@ -14,6 +14,7 @@ library.add(faUserSlash, faHandPaper)
 
 @Component({
   selector: 'app-error-page',
+  standalone: true,
   templateUrl: './error-page.component.html',
   styleUrls: ['./error-page.component.scss'],
   imports: [MatCardModule]
