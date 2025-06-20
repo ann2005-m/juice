@@ -45,6 +45,7 @@ library.add(faCartArrowDown, faGift, faHeart, faLeanpub, faThumbsUp, faTshirt, f
 
 @Component({
   selector: 'app-payment',
+  standalone: true,
   templateUrl: './payment.component.html',
   styleUrls: ['./payment.component.scss'],
   imports: [MatCardModule, PaymentMethodComponent, MatDivider, NgIf, FlexModule, TranslateModule, MatButtonModule, MatExpansionPanel, MatExpansionPanelHeader, MatExpansionPanelTitle, MatExpansionPanelDescription, MatFormFieldModule, MatLabel, MatHint, MatInputModule, FormsModule, ReactiveFormsModule, MatError, MatIconModule]
