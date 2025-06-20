@@ -26,6 +26,7 @@ library.add(faUser, faEye, faHome, faArchive, faTrashAlt)
 
 @Component({
   selector: 'app-administration',
+  standalone: true,
   templateUrl: './administration.component.html',
   styleUrls: ['./administration.component.scss'],
   imports: [MatCardModule, TranslateModule, FlexModule, MatTable, MatColumnDef, MatHeaderCellDef, MatHeaderCell, MatCellDef, MatCell, NgIf, MatButtonModule, MatHeaderRowDef, MatHeaderRow, MatRowDef, MatRow, MatPaginator, MatTooltip, NgFor, MatIconModule]
