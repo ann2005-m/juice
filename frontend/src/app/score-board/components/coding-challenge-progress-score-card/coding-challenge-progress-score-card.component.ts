@@ -6,6 +6,7 @@ import { ScoreCardComponent } from '../score-card/score-card.component'
 
 @Component({
   selector: 'coding-challenge-progress-score-card',
+  standalone: true,
   templateUrl: './coding-challenge-progress-score-card.component.html',
   styleUrls: ['./coding-challenge-progress-score-card.component.scss'],
   imports: [ScoreCardComponent, TranslateModule]
