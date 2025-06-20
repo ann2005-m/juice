@@ -28,6 +28,7 @@ library.add(faSave, faEdit)
 
 @Component({
   selector: 'app-forgot-password',
+  standalone: true,
   templateUrl: './forgot-password.component.html',
   styleUrls: ['./forgot-password.component.scss'],
   imports: [FlexModule, MatCardModule, TranslateModule, MatFormFieldModule, MatLabel, MatInputModule, FormsModule, ReactiveFormsModule, MatIconModule, MatSuffix, MatTooltip, NgIf, MatError, MatHint, MatSlideToggle, PasswordStrengthComponent, PasswordStrengthInfoComponent, MatButtonModule]
