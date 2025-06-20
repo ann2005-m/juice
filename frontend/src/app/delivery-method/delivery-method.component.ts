@@ -26,6 +26,7 @@ library.add(faRocket, faShippingFast, faTruck)
 
 @Component({
   selector: 'app-delivery-method',
+  standalone: true,
   templateUrl: './delivery-method.component.html',
   styleUrls: ['./delivery-method.component.scss'],
   imports: [MatCardModule, NgIf, TranslateModule, MatDivider, MatTable, MatColumnDef, MatHeaderCellDef, MatHeaderCell, FlexModule, MatCellDef, MatCell, MatRadioButton, NgClass, ExtendedModule, MatHeaderRowDef, MatHeaderRow, MatRowDef, MatRow, MatButtonModule, MatIconModule]
