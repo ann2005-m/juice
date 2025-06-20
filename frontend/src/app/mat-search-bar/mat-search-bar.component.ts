@@ -25,6 +25,7 @@ import { MatFormFieldModule } from '@angular/material/form-field'
 
 @Component({
   selector: 'app-mat-search-bar',
+  standalone: true,
   templateUrl: './mat-search-bar.component.html',
   styleUrls: ['./mat-search-bar.component.scss'],
   animations: [
