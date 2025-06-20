@@ -20,6 +20,7 @@ import { MatCardModule } from '@angular/material/card'
 
 @Component({
   selector: 'app-order-summary',
+  standalone: true,
   templateUrl: './order-summary.component.html',
   styleUrls: ['./order-summary.component.scss'],
   imports: [MatCardModule, FlexModule, NgIf, TranslateModule, PurchaseBasketComponent, MatButtonModule, MatIconModule]
