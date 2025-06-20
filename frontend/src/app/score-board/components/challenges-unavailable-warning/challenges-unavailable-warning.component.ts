@@ -9,6 +9,7 @@ import { NgIf, NgClass } from '@angular/common'
 
 @Component({
   selector: 'challenges-unavailable-warning',
+  standalone: true,
   templateUrl: './challenges-unavailable-warning.component.html',
   styleUrls: ['./challenges-unavailable-warning.component.scss'],
   imports: [NgIf, WarningCardComponent, NgClass, MatButtonModule, TranslateModule]
