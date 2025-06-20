@@ -19,8 +19,7 @@ import { MatIconModule } from '@angular/material/icon'
 @Component({
   selector: 'app-wallet',
   templateUrl: './wallet.component.html',
-  styleUrls: ['./wallet.component.scss'],
-  // imports: [MatCardModule, TranslateModule, MatFormFieldModule, MatLabel, FormsModule, MatInputModule, ReactiveFormsModule, NgIf, MatError, MatButtonModule, MatIconModule]
+  styleUrls: ['./wallet.component.scss']
 })
 export class WalletComponent implements OnInit {
   public balance: string
