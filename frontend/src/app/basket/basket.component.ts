@@ -16,6 +16,7 @@ library.add(faCartArrowDown)
 
 @Component({
   selector: 'app-basket',
+  standalone: true,
   templateUrl: './basket.component.html',
   styleUrls: ['./basket.component.scss'],
   imports: [MatCardModule, PurchaseBasketComponent, MatButtonModule, TranslateModule]
