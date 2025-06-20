@@ -20,6 +20,7 @@ interface HackingProgress {
 
 @Component({
   selector: 'app-server-started-notification',
+  standalone: true,
   templateUrl: './server-started-notification.component.html',
   styleUrls: ['./server-started-notification.component.scss'],
   imports: [NgIf, MatCardModule, MatCardContent, TranslateModule, MatButtonModule, MatIconModule]
