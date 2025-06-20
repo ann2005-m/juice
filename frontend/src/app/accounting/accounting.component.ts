@@ -34,6 +34,7 @@ interface Order {
 
 @Component({
   selector: 'app-accounting',
+  standalone: true,
   templateUrl: './accounting.component.html',
   styleUrls: ['./accounting.component.scss'],
   imports: [MatCardModule, TranslateModule, FlexModule, MatTable, MatColumnDef, MatHeaderCellDef, MatHeaderCell, MatCellDef, MatCell, NgIf, MatIconButton, MatTooltip, MatIconModule, MatHeaderRowDef, MatHeaderRow, MatRowDef, MatRow, MatPaginator, MatFormFieldModule, MatInputModule, MatSuffix]
