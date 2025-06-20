@@ -20,6 +20,7 @@ import { FlexModule } from '@angular/flex-layout/flex'
 
 @Component({
   selector: 'app-address-create',
+  standalone: true,
   templateUrl: './address-create.component.html',
   styleUrls: ['./address-create.component.scss'],
   imports: [FlexModule, MatCardModule, TranslateModule, MatFormFieldModule, MatLabel, MatInputModule, FormsModule, ReactiveFormsModule, NgIf, MatError, MatHint, MatButtonModule, MatIconModule]
