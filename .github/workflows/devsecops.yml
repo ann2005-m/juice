@@ -73,12 +73,23 @@ jobs:
       - run: npm run test:ci # Use karma with --no-sandbox
 
   e2e:
-    runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./frontend
-    steps:
-      - uses: actions/checkout@v4
-      - run: npm install
-      - run: npm run e2e
+   runs-on: ubuntu-latest
+   defaults:
+    run:
+      working-directory: ./frontend
+   steps:
+    - uses: actions/checkout@v4
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Start backend server
+      run: npm start &
+      working-directory: ../  # Assuming backend is in root or another folder
+
+    - name: Wait for app to be ready
+      run: npx wait-on http://localhost:3000
+
+    - name: Run Cypress tests
+      run: npx cypress run
 
