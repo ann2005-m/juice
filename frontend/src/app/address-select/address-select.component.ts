@@ -9,6 +9,7 @@ import { AddressComponent } from '../address/address.component'
 
 @Component({
   selector: 'app-address-select',
+  standalone: true,
   templateUrl: './address-select.component.html',
   styleUrls: ['./address-select.component.scss'],
   imports: [AddressComponent]
