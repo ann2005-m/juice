@@ -9,6 +9,7 @@ import { MatProgressBarModule } from '@angular/material/progress-bar'
 
 @Component({
   selector: 'app-password-strength',
+  standalone: true,
   imports: [MatProgressBarModule, NgClass],
   templateUrl: './password-strength.component.html',
   styleUrl: './password-strength.component.scss'
