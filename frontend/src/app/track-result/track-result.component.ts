@@ -27,6 +27,7 @@ export enum Status {
 
 @Component({
   selector: 'app-track-result',
+  standalone: true,
   templateUrl: './track-result.component.html',
   styleUrls: ['./track-result.component.scss'],
   imports: [MatCardModule, TranslateModule, NgIf, FlexModule, MatTable, MatColumnDef, MatHeaderCellDef, MatHeaderCell, MatCellDef, MatCell, ExtendedModule, MatHeaderRowDef, MatHeaderRow, MatRowDef, MatRow]
