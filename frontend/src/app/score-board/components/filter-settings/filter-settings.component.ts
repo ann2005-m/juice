@@ -18,7 +18,7 @@ import { MatFormFieldModule, MatPrefix, MatLabel } from '@angular/material/form-
 
 @Component({
   selector: 'filter-settings',
-  standalone: true;
+  standalone: true,
   templateUrl: './filter-settings.component.html',
   styleUrls: ['./filter-settings.component.scss'],
   imports: [MatFormFieldModule, MatIconModule, MatPrefix, MatLabel, TranslateModule, MatInputModule, MatSelect, MatSelectTrigger, NgIf, MatOption, DifficultyStarsComponent, NgFor, MatIconButton, MatTooltip, CategoryFilterComponent, DifficultySelectionSummaryPipe]
