@@ -18,6 +18,7 @@ library.add(faBitcoin, faUniversity, faGraduationCap, faCommentAlt, faComments, 
 
 @Component({
   selector: 'app-token-sale',
+  standalone: true,
   templateUrl: './token-sale.component.html',
   styleUrls: ['./token-sale.component.scss'],
   imports: [MatCardModule, FlexModule, MatCardHeader, MatCardTitle, MatCardSubtitle, TranslateModule, MatButtonModule]
