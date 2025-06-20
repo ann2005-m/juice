@@ -26,6 +26,7 @@ library.add(faStar, faPaperPlane)
 
 @Component({
   selector: 'app-contact',
+  standalone: true,
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss'],
   imports: [FlexModule, MatCardModule, TranslateModule, FormsModule, ReactiveFormsModule, MatFormFieldModule, MatLabel, MatInputModule, MatHint, NgIf, MatError, MatSliderModule, MatButtonModule, MatIconModule]
