@@ -16,6 +16,7 @@ import { NgIf } from '@angular/common'
 
 @Component({
   selector: 'app-welcome-banner',
+  standalone: true,
   templateUrl: 'welcome-banner.component.html',
   styleUrls: ['./welcome-banner.component.scss'],
   imports: [NgIf, MatButtonModule, MatTooltip, MatIconModule, ExtendedModule, TranslateModule]
