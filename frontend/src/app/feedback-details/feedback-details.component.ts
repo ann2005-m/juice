@@ -13,6 +13,7 @@ import { MatIconModule } from '@angular/material/icon'
 
 @Component({
   selector: 'app-feedback-details',
+  standalone: true,
   templateUrl: './feedback-details.component.html',
   styleUrls: ['./feedback-details.component.scss'],
   imports: [MatDialogContent, MatDivider, FlexModule, MatDialogActions, MatButtonModule, MatDialogClose, TranslateModule, MatIconModule]
