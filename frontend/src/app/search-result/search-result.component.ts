@@ -44,6 +44,7 @@ interface TableEntry {
 
 @Component({
   selector: 'app-search-result',
+  standalone: true,
   templateUrl: './search-result.component.html',
   styleUrls: ['./search-result.component.scss'],
   imports: [FlexModule, NgIf, MatGridList, NgFor, MatGridTile, MatCardModule, TranslateModule, MatTooltip, MatCardImage, MatButtonModule, MatCardTitle, MatCardContent, MatDivider, MatPaginator, AsyncPipe]
