@@ -23,6 +23,7 @@ library.add(faEdit, faTrashAlt)
 
 @Component({
   selector: 'app-address',
+  standalone: true,
   templateUrl: './address.component.html',
   styleUrls: ['./address.component.scss'],
   imports: [MatCardModule, NgIf, TranslateModule, MatTable, MatColumnDef, MatHeaderCellDef, MatHeaderCell, FlexModule, MatCellDef, MatCell, MatRadioButton, MatIconButton, RouterLink, MatHeaderRowDef, MatHeaderRow, MatRowDef, MatRow, MatButtonModule, MatIconModule]
