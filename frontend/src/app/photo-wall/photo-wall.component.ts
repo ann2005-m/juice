@@ -24,6 +24,7 @@ library.add(faTwitter)
 
 @Component({
   selector: 'app-photo-wall',
+  standalone: true,
   templateUrl: './photo-wall.component.html',
   styleUrls: ['./photo-wall.component.scss'],
   imports: [MatCardModule, NgIf, NgFor, MatIconButton, MatCardTitle, TranslateModule, MatCardContent, FormsModule, ReactiveFormsModule, MatButtonModule, MatFormFieldModule, MatLabel, MatInputModule, MatError]
