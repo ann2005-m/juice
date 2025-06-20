@@ -43,6 +43,6 @@ export class WalletComponent implements OnInit {
 
   continue () {
     sessionStorage.setItem('walletTotal', this.balanceControl.value)
-    this.ngZone.run(async () => this.router.navigate(['/payment', 'wallet']))
+    this.ngZone.run(async () => await this.router.navigate(['/payment', 'wallet']))
   }
 }
