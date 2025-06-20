@@ -36,6 +36,7 @@ const BeeFaucetAddress = '0x860e3616aD0E0dEDc23352891f3E10C4131EA5BC'
 
 @Component({
   selector: 'app-faucet',
+  standalone: true,
   templateUrl: './faucet.component.html',
   styleUrls: ['./faucet.component.scss'],
   imports: [MatCardModule, TranslateModule, MatButtonModule, NgIf, MatFormFieldModule, MatLabel, MatInputModule, FormsModule, MatIconModule]
