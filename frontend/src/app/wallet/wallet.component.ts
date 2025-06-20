@@ -2,7 +2,6 @@
  * Copyright (c) 2014-2025 Bjoern Kimminich & the OWASP Juice Shop contributors.
  * SPDX-License-Identifier: MIT
  */
-
 /* 
 import { Component, NgZone, type OnInit } from '@angular/core'
 import { WalletService } from '../Services/wallet.service'
@@ -20,7 +19,7 @@ import { MatIconModule } from '@angular/material/icon'
 @Component({
   selector: 'app-wallet',
   templateUrl: './wallet.component.html',
-  styleUrls: ['./wallet.component.scss'],
+  styleUrls: ['./wallet.component.scss']
   // imports: [MatCardModule, TranslateModule, MatFormFieldModule, MatLabel, FormsModule, MatInputModule, ReactiveFormsModule, NgIf, MatError, MatButtonModule, MatIconModule] 
 })
 export class WalletComponent implements OnInit {
