@@ -16,6 +16,7 @@ import { NgIf } from '@angular/common'
 
 @Component({
   selector: 'app-deluxe-user',
+  standalone: true,
   templateUrl: './deluxe-user.component.html',
   styleUrls: ['./deluxe-user.component.scss'],
   imports: [NgIf, MatCardModule, TranslateModule, MatButtonModule, MatIconModule]
