@@ -22,6 +22,7 @@ library.add(faTrashAlt, faMinusSquare, faPlusSquare)
 
 @Component({
   selector: 'app-purchase-basket',
+  standalone: true,
   templateUrl: './purchase-basket.component.html',
   styleUrls: ['./purchase-basket.component.scss'],
   imports: [MatTable, MatColumnDef, MatHeaderCellDef, MatHeaderCell, MatCellDef, MatCell, ExtendedModule, FlexModule, MatFooterCellDef, MatFooterCell, NgIf, MatIconButton, MatHeaderRowDef, MatHeaderRow, MatRowDef, MatRow, MatFooterRowDef, MatFooterRow, TranslateModule]
