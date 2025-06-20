@@ -10,9 +10,10 @@ import { MatIconModule } from '@angular/material/icon'
 
 @Component({
   selector: 'app-password-strength-info',
-  imports: [MatCardModule, MatIconModule],
+  standalone: true,
   templateUrl: './password-strength-info.component.html',
-  styleUrl: './password-strength-info.component.scss'
+  styleUrl: './password-strength-info.component.scss',
+  imports: [MatCardModule, MatIconModule]
 })
 export class PasswordStrengthInfoComponent implements OnInit {
   @Input()
