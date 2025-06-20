@@ -8,6 +8,7 @@ import { AddressComponent } from '../address/address.component'
 
 @Component({
   selector: 'app-saved-address',
+  standalone: true,
   templateUrl: './saved-address.component.html',
   styleUrls: ['./saved-address.component.scss'],
   imports: [AddressComponent]
