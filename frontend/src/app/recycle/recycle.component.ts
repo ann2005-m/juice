@@ -27,6 +27,7 @@ library.add(faPaperPlane)
 
 @Component({
   selector: 'app-recycle',
+  standalone: true,
   templateUrl: './recycle.component.html',
   styleUrls: ['./recycle.component.scss'],
   imports: [MatCardModule, FlexModule, TranslateModule, MatFormFieldModule, MatLabel, MatInputModule, FormsModule, ReactiveFormsModule, NgIf, MatError, AddressComponent, MatDatepickerInput, MatDatepickerToggle, MatSuffix, MatDatepicker, MatCheckbox, MatButtonModule, MatCardImage, MatCardContent]
