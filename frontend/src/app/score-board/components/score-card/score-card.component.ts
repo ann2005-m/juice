@@ -3,6 +3,7 @@ import { NgIf, DecimalPipe } from '@angular/common'
 
 @Component({
   selector: 'score-card',
+  standalone: true,
   templateUrl: './score-card.component.html',
   styleUrls: ['./score-card.component.scss'],
   imports: [NgIf, DecimalPipe]
