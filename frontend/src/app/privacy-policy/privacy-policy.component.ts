@@ -12,6 +12,7 @@ import { MatCardModule } from '@angular/material/card'
 
 @Component({
   selector: 'app-privacy-policy',
+  standalone: true,
   templateUrl: './privacy-policy.component.html',
   styleUrls: ['./privacy-policy.component.scss'],
   imports: [MatCardModule, TranslateModule, MatDivider]
