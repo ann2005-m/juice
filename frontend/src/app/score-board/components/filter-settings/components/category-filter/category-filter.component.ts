@@ -7,6 +7,7 @@ import { NgClass, NgFor } from '@angular/common'
 
 @Component({
   selector: 'category-filter',
+  standalone: true,
   templateUrl: './category-filter.component.html',
   styleUrls: ['./category-filter.component.scss'],
   imports: [NgClass, NgFor, MatTooltip, TranslateModule]
