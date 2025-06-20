@@ -40,6 +40,7 @@ interface CodeChallengeSolvedWebsocket {
 
 @Component({
   selector: 'app-score-board',
+  standalone: true,
   templateUrl: './score-board.component.html',
   styleUrls: ['./score-board.component.scss'],
   imports: [HackingChallengeProgressScoreCardComponent, CodingChallengeProgressScoreCardComponent, DifficultyOverviewScoreCardComponent, NgIf, FilterSettingsComponent, MatProgressSpinner, ChallengesUnavailableWarningComponent, TutorialModeWarningComponent, NgFor, ChallengeCardComponent, NgClass, TranslateModule]
