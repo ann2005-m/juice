@@ -15,6 +15,7 @@ interface LineMarker {
 
 @Component({
   selector: 'app-code-area',
+  standalone: true,
   templateUrl: './code-area.component.html',
   styleUrls: ['./code-area.component.scss'],
   imports: [NgFor, HighlightModule]
