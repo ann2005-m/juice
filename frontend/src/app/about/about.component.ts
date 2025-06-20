@@ -24,6 +24,7 @@ library.add(faFacebook, faTwitter, faSlack, faReddit, faNewspaper, faStar, fasSt
 
 @Component({
   selector: 'app-about',
+  standalone: true,
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.scss'],
   imports: [FlexModule, MatCardModule, TranslateModule, GalleryComponent, GalleryImageDef, NgIf, MatButtonModule]
