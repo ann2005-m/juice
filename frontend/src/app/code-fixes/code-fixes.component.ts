@@ -8,6 +8,7 @@ import { NgIf } from '@angular/common'
 
 @Component({
   selector: 'app-code-fixes',
+  standalone: true,
   templateUrl: './code-fixes.component.html',
   styleUrls: ['./code-fixes.component.scss'],
   imports: [NgIf, NgxTextDiffModule]
