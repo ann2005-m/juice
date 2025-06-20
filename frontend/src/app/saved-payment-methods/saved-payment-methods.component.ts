@@ -9,6 +9,7 @@ import { MatCardModule } from '@angular/material/card'
 
 @Component({
   selector: 'app-saved-payment-methods',
+  standalone: true,
   templateUrl: './saved-payment-methods.component.html',
   styleUrls: ['./saved-payment-methods.component.scss'],
   imports: [MatCardModule, PaymentMethodComponent]
