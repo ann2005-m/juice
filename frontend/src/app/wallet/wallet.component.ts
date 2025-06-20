@@ -14,7 +14,6 @@ import { MatFormFieldModule, MatLabel, MatError } from '@angular/material/form-f
 import { TranslateModule } from '@ngx-translate/core'
 import { MatCardModule } from '@angular/material/card'
 import { MatIconModule } from '@angular/material/icon'
-import { Validators, UntypedFormControl } from '@angular/forms'
 
 @Component({
   selector: 'app-wallet',
