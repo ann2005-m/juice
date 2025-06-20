@@ -26,6 +26,7 @@ const INITIAL_SUMMARIES: Readonly<DifficultySummaries> = Object.freeze({
 
 @Component({
   selector: 'difficulty-overview-score-card',
+  standalone: true,
   templateUrl: './difficulty-overview-score-card.component.html',
   styleUrls: ['./difficulty-overview-score-card.component.scss'],
   imports: [ScoreCardComponent, NgFor, NgIf, TranslateModule]
