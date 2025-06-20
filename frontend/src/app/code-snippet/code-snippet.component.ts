@@ -45,6 +45,7 @@ export interface RandomFixes {
 
 @Component({
   selector: 'code-snippet',
+  standalone: true,
   templateUrl: './code-snippet.component.html',
   styleUrls: ['./code-snippet.component.scss'],
   host: { class: 'code-snippet' },
