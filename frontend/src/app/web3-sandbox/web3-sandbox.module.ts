@@ -24,7 +24,6 @@ const routes: Routes = [
 ]
 
 @NgModule({
-  declarations: [Web3SandboxComponent],
   imports: [
     CodemirrorModule,
     CommonModule,
